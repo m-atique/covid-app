@@ -33,7 +33,7 @@ jobs:
         run: npm install -g surge
     # deploying  on surge site
       - name: Deploy to Surge
-        run: surge ./build http://covidtracker_by_atique.surge.sh/--token ${{ secrets.SURGE_TOKEN}}
+        run: surge ./build http://covidtracker-by-atique.surge.sh/--token ${{ secrets.SURGE_TOKEN}}
 © 2021 GitHub, Inc.
 Terms
 Privacy
