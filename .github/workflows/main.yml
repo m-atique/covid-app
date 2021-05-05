@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: Covid Tracker
+name: Covid tracker
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
 on:
@@ -34,15 +34,3 @@ jobs:
     # deploying  on surge site
       - name: Deploy to Surge
         run: surge ./build http://covidtracker-by-atique.surge.sh/--token ${{ secrets.SURGE_TOKEN}}
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
