@@ -30,18 +30,16 @@ jobs:
         with:
          nide-version: 12
        # installing Yarn
+      - name: GitHub Action for Yarn
+        uses: Borales/actions-yarn@v2.3.0
+    # Installing yarn
       - name: Installing Yarn
-      - uses: borales/actions-yarn@v2.0.0
-        with:
-            cmd: install
-      # creating Buils
-      - name: yarn build
         run: yarn build
-      #Installing Surge
-      - name: Install Surge
-        run: npm install --global surge
-      #deploying app
-      - name: Deploying app to Surge
+    # installing surg
+      - name: installing Surge
+        run: npm install -g surge
+    # deploying  on surge site
+      - name: Deploy to Surge
         run: surge ./build https://covidtracker-by-atique.surge.sh/--token ${{ secrets.SURGE_TOKEN}}
 
      
