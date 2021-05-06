@@ -28,7 +28,7 @@ jobs:
       - name: Setup Node.js environment
         uses: actions/setup-node@v2-beta
         with:
-         nide-version: 12
+         node-version: 12
        # installing Yarn
       - uses: borales/actions-yarn@v2.0.0
         with:
