@@ -26,7 +26,7 @@ class  App extends React.Component {
   return (
     <div className = {styles.container}>
     
-      <img src ={image} className={styles.image}/>
+      <img src ={image} className={styles.image} alt ='Covid-Tracker'/>
       
     
      

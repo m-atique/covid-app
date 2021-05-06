@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { fetchDailyData } from '../../api'
 import { Line, Bar } from 'react-chartjs-2'
-import styles from './Charts.module.css'
-import { registerables } from 'chart.js';
+
 
 
 const Charts = ({data:{confirmed,recovered,deaths},country}) => {
@@ -13,7 +12,7 @@ const Charts = ({data:{confirmed,recovered,deaths},country}) => {
 
             setDailyData(await fetchDailyData())
         }
-        console.log(dailyData)
+      
         fetchedApiData()
 
 
