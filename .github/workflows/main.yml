@@ -32,8 +32,8 @@ jobs:
        # installing Yarn
       - name: GitHub Action for Yarn
         uses: Borales/actions-yarn@v2.3.0
-    # Installing yarn
-      - name: Installing Yarn
+    # yarn build
+      - name: yarn build
         run: yarn build
     # installing surg
       - name: installing Surge
