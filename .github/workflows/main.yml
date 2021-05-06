@@ -37,8 +37,8 @@ jobs:
         with:
           cmd: build # will run `yarn build` command
     # installing surg
-     - name: Install Surge
-      run: npm install -g surge
+      - name: Install Surge
+        run: npm install -g surge
     # deploying  on surge site
       - name: Deploy to Surge
         run: surge ./build https://covidtracker-by-atique.surge.sh/--token ${{ secrets.SURGE_TOKEN}}
